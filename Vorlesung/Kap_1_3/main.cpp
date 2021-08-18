@@ -8,7 +8,7 @@ int main()
 
 {
     ifstream quelle;
-    string quellname = "/Users/jakobthoss/Pad2_Altenbernd/Vorlesung/Kapitel_1_3_MesswerteEinlesen/messwerte.txt";
+    string quellname = "./messwerte.txt";
     quelle.open(quellname.c_str(), ios::in);
 
     if(!quelle) {

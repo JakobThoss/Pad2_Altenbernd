@@ -21,3 +21,6 @@ git push
 
 // Wenn online verändert -> lokal aktualisieren
 git pull
+
+// Anzeige Datei
+cat <nameDatei>

@@ -3,14 +3,14 @@
 int main()
 {
 
-    Stack <int,10> test;
+    Stack <string,10> test;
 
     cout << "leer? " << test.empty() << endl;
 
-    test.push(4);
-    test.push(7);
-    test.push(12);
-    test.push(6);
+    test.push("A");
+    test.push("B");
+    test.push("hallo");
+    test.push("C");
 
     cout << "leer? " << test.empty() << endl;
 

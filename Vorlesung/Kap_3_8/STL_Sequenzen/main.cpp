@@ -6,6 +6,7 @@
 #include <list>
 #include <algorithm>
 #include <deque>
+#include <array>
 
 using namespace std;
 
@@ -41,7 +42,7 @@ int main() {
         vector <string> v;
         eingabe(v);
     } else if(temp == 2) {
-        deque <string> x;
+
     }
 
     return 0;

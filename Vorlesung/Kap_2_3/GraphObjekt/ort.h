@@ -29,13 +29,13 @@ private:
 // globale Funktionen
 // Berechnung der Entfernung zwischen zwei Orten
 double Entfernung(const Ort &Ort1, const Ort &Ort2) {
- double dx = static_cast<double>(Ort1.X() - Ort2.X());
- double dy = static_cast<double>(Ort1.Y() - Ort2.Y());
- return sqrt(dx*dx + dy*dy);
+    double dx = static_cast<double>(Ort1.X() - Ort2.X());
+    double dy = static_cast<double>(Ort1.Y() - Ort2.Y());
+    return sqrt(dx*dx + dy*dy);
 }
 // Anzeige auf der Standardausgabe → später
 void anzeigen(const Ort &O) {
- cout << '(' << O.X() << ", " << O.Y() << ')';
+    cout << '(' << O.X() << ", " << O.Y() << ')';
 }
 
 #endif // ORT_H

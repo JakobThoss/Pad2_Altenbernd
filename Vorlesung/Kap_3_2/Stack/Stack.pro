@@ -4,12 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        bestand.cpp \
-        kunde.cpp \
         main.cpp \
-        premiumkunde.cpp
+        stack.cpp
 
 HEADERS += \
-    bestand.h \
-    kunde.h \
-    premiumkunde.h
+    stack.h

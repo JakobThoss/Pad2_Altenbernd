@@ -8,7 +8,7 @@ using namespace std;
 
 class Kunde
 {
-private:
+protected:
     string name;
     int nummer;
 public:
@@ -17,7 +17,7 @@ public:
         name = p_name;
         nummer = p_nummer;
     }
-    void ausgabe();
+    virtual void ausgabe() = 0;
     void data_write(ofstream & ausgabe);
     void data_read(ifstream & eingabe);
 

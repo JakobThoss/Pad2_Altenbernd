@@ -1,6 +1,7 @@
 #ifndef GRAPHOBJ_H
 #define GRAPHOBJ_H
 #include "ort.h"
+#include <math.h>
 
 
 class GraphObj {
@@ -26,10 +27,15 @@ public:
     int X() const { return Referenzkoordinaten.X(); }
     int Y() const { return Referenzkoordinaten.Y(); }
 
-    double Flaeche() const {return 0.0;}
+    virtual double Flaeche() const {
+        return 0;
+    }
+    virtual double Umfang() const {
+        return 0;
+    }
 
 
-    protected:
+protected:
     Ort Referenzkoordinaten;
 };
 /* Die Entfernung zwischen 2 GraphObj-Objekten ist hier als

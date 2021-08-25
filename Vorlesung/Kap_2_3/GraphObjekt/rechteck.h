@@ -19,6 +19,10 @@ public:
  return double(hoehe) * breite;
  }
 
+ double Umfang() const {
+     return (2* hoehe + 2* breite);
+ }
+
 private:
  int hoehe, breite;
 };

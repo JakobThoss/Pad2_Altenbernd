@@ -55,6 +55,16 @@ public:
     void ausgabe(){
         cout << this->zaehler << "/" << this->nenner << endl;
     }
+
+    int operator[](unsigned int x) {
+        if(x == 0) {
+            return this->zaehler;
+        } else if( x == 1) {
+            return this->nenner;
+        } else {
+            return false;
+        }
+    }
 };
 
 bool operator==(const Rational& a, const Rational& b) {

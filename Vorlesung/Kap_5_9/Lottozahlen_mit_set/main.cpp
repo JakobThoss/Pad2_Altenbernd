@@ -12,10 +12,6 @@ void lotto(set<int> s, set<int> gezogen) {
          s.insert(i);
     }
 
-  //  for(set<int>::iterator it = s.begin(); it != s.end(); ++it) {
-  //      cout << *it << " ";
-  //  }
-
         srand(time(NULL));
 
     for(int i = 0; i < auswahl; i++){
@@ -32,7 +28,14 @@ void lotto(set<int> s, set<int> gezogen) {
 
     }
 
+    cout << "Gezogen: ";
     for(set<int>::iterator it = gezogen.begin(); it != gezogen.end(); ++it) {
+        cout << *it << " ";
+    }
+    cout << endl << endl;
+
+    cout << "Alle:  ";
+    for(set<int>::iterator it = s.begin(); it != s.end(); ++it) {
         cout << *it << " ";
     }
     cout << endl;
